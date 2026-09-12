@@ -1,10 +1,8 @@
 ### Unreleased
 
-* **New Resource:** `artifactory_federated_machinelearning_repository`
-### 12.11.15 (Aug 31, 2026). Tested on Artifactory 7.161.20 with Terraform 1.16.0 and OpenTofu 1.12.3
-
 FEATURES:
 
+* **New Resource:** `artifactory_federated_machinelearning_repository`
 * resource/artifactory_virtual_*_repository: Add `hide_unauthorized_resources` attribute mapping to Artifactory's `hideUnauthorizedResources` setting, so virtual repositories can return 404 instead of 403 for unauthorized resource access. Issue: [#1279](https://github.com/jfrog/terraform-provider-artifactory/issues/1279)
 
 ### 12.11.14 (Aug 31, 2026).
