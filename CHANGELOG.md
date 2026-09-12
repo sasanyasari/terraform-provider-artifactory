@@ -10,10 +10,13 @@ FEATURES:
 * resource/artifactory_virtual_*_repository: Add `hide_unauthorized_resources` attribute mapping to Artifactory's `hideUnauthorizedResources` setting, so virtual repositories can return 404 instead of 403 for unauthorized resource access. Issue: [#1279](https://github.com/jfrog/terraform-provider-artifactory/issues/1279)
 
 ### 12.11.14 (Aug 25, 2026).
+### 12.11.14 (Aug 31, 2026).
 
 FEATURES:
 
 * resource/artifactory_remote_*_repository: Add `enable_token_authentication` to the common remote repository schema so every package type can authenticate to the remote with a Bearer token via `password` (username may be empty). Previously this attribute was only available on Docker, OCI, Helm OCI, and AI Editor Extensions remotes. Default is `false` for most package types; OCI, Helm OCI, and Hugging Face remotes default to `true`.
+
+* resource/artifactory_virtual_*_repository: Add `hide_unauthorized_resources` attribute mapping to Artifactory's `hideUnauthorizedResources` setting, so virtual repositories can return 404 instead of 403 for unauthorized resource access. Issue: [#1279](https://github.com/jfrog/terraform-provider-artifactory/issues/1279)
 
 ### 12.11.13 (Aug 24, 2026).
 
@@ -49,12 +52,6 @@ SECURITY:
 * provider: Address CVE-2026-56853 by upgrading Go to 1.27.0. CVSS 5.3 Medium.
 * provider: Address CVE-2026-27143 by upgrading Go to 1.27.0. CVSS 6.1 Critical.
 * provider: Address CVE-2026-27140 by upgrading Go to 1.27.0. CVSS 5.3 High.
-
-### 12.11.11 (Aug 18, 2026). Tested on Artifactory 7.161.16 with Terraform 1.15.8 and OpenTofu 1.12.3
-
-FEATURES:
-
-* resource/artifactory_virtual_*_repository: Add `hide_unauthorized_resources` attribute mapping to Artifactory's `hideUnauthorizedResources` setting, so virtual repositories can return 404 instead of 403 for unauthorized resource access. Issue: [#1279](https://github.com/jfrog/terraform-provider-artifactory/issues/1279)
 
 ### 12.11.10 (Aug 12, 2026).
 
