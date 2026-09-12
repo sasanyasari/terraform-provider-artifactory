@@ -1,7 +1,5 @@
 ### Unreleased
 
-FEATURES:
-
 * **New Resource:** `artifactory_federated_machinelearning_repository`
 ### 12.11.15 (Aug 31, 2026). Tested on Artifactory 7.161.20 with Terraform 1.16.0 and OpenTofu 1.12.3
 
